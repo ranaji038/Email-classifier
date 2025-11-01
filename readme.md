@@ -1,9 +1,3 @@
-Here’s your complete **`README.md`** file — ready to drop into your repository (`Email-classifier/README.md`).
-It follows best practices for open-source documentation and GitHub formatting.
-
----
-
-````markdown
 # 📧 Email Classifier
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
@@ -64,6 +58,7 @@ Optional but recommended:
    git clone https://github.com/ranaji038/Email-classifier.git
    cd Email-classifier
    ```
+
 ````
 
 2. **Create and activate a virtual environment (optional)**
@@ -231,3 +226,4 @@ See the [LICENSE](LICENSE) file for details.
 ```
 
 ```
+````
