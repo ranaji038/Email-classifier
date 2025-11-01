@@ -1,0 +1,48 @@
+/* style.css */
+
+/* --- Import a clean font --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8; /* Light grey background */
+}
+
+/* --- Override Streamlit's centered layout width --- */
+/* This is the main block that contains the app */
+div[data-testid="stAppViewContainer"] > .main > div[data-testid="block-container"] {
+    max-width: 900px; /* Your desired width */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* --- Style the main input/textarea widgets --- */
+.stTextInput>div>div>input, .stTextArea textarea {
+    border-radius: 6px !important;
+    border: 1px solid #d0d7de !important;
+    background-color: #ffffff !important;
+    color: #111111 !important; /* Ensures text is visible on white background */
+}
+
+/* --- Style the main button --- */
+.stButton>button {
+    background-color: #1a73e8; /* Google blue */
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.stButton>button:hover {
+    background-color: #0c56c9;
+    transform: translateY(-1px); /* Subtle lift effect */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* --- Style the sidebar --- */
+div[data-testid="stSidebar"] {
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+}
