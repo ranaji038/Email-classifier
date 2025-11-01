@@ -10,11 +10,11 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-# -------------------------------
-# 🔧 Setup & Helper Functions
-# -------------------------------
+
 nltk.download('punkt', quiet=True)
 nltk.download('stopwords', quiet=True)
+nltk.download('punkt_tab', quiet=True)
+
 ps = PorterStemmer()
 
 def transform_text(text):
